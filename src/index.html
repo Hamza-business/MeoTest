@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>الدين المجيد | Glorious Religion</title>
+    <meta name="description" content=" على جميع الأمة حكماء وعلماء وتجار وغيرهم، أن يبلغوا عن الله ورسوله ﷺ – هذا الدين وأن يشرحوه للناس بشتى اللغات الحية المستعملة بأساليب واضحة، وأن يشرحوا محاسن الإسلام، وحكمه وفوائده ، وحقيقته حتى يعرفه أعداؤه، وحتى يعرفه الجاهلون، وحتى يعرفه الراغبون فيه.">
+    <link rel="shortcut icon" href="Assets/images/الدين-المجيد.jpg" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='Assets/style/bulma-rtl.min.css'>
+    <link rel='stylesheet' href='Assets/style/main.css'>
+
+    <!-- Components -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item logo" href="#">
+                <img src="Assets/images/logo.png">
+            </a>
+
+            <a class="navbar-burger" onclick="navshow()">
+                <span class='bx-flashing'></span>
+                <span class='bx-flashing'></span>
+                <span class='bx-flashing'></span>
+            </a>
+        </div>
+    
+        <div id="nav" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="#"><i class='bx bxs-home has-text-success'></i> الرئيسية</a>
+                <a class="navbar-item" href="All-Articles/"><i class='bx bxs-book-content bx-tada has-text-info'></i> جميع المقالات</a>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-item is-arrowless"><i class="fas fa-language has-text-primary"></i> Language | اللغة</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item"><i class="fas fa-globe-asia has-text-primary"></i> عربي</a>
+                        <a class="navbar-item"><i class="fas fa-globe-europe has-text-primary"></i> English</a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="#about"><i class='bx bxs-info-circle has-text-warning'></i> عن الموقع</a>
+            </div>
+
+            <div class="navbar-end">
+                <div class="buttons">
+                    <a class="button is-primary is-outlined" href="https://www.patreon.com/GloriousReligion"><i class='bx bxs-dollar-circle bx-tada has-text-success'></i> لدعم الموقع</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pops-conatainer" id="Zekr-pop">
+        <div class="notification notifications noti1 is-link">
+            <button class="delete" onclick="this.parentElement.style.display='none'"></button>
+            <p></p>
+        </div>
+    </div>
+
+    <section class="hero is-success has-text-centered">
+        <div class="hero-body infoer">
+            <p class="title aya" id="aya"></p>
+            <br><h1 class="subtitle is-size-4">مرحبا بكم في " الدين المجيد "</h1>
+        </div>
+    </section>
+
+    <section class="carder">
+        <div class="container">
+            <h3 class="title has-text-centered has-text-primary">المقالات الاكثر قراءة</h3>
+            <div class="card-parent columns">
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="content has-text-centered">
+                <a href="All-Articles/" class="button is-primary">عرض جميع المقالات</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><hr></div>
+
+    <section class="carder">
+        <div class="container">
+            <h3 class="title has-text-centered has-text-primary">احدث المقالات</h3>
+            <div class="card-parent columns">
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image">
+                        <img src="Assets/images/background.jpg" alt="Placeholder image">
+                    </div>
+                    <div class="card-content">
+                        <div class="content">
+                            <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
+                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
+                            <time datetime="">تاريخ النشر: 2022/3/4</time>
+                            <view viewnumber="">عدد مرات القراءة: 70M</view>
+                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="content has-text-centered">
+                <a href="All-Articles/" class="button is-primary">عرض جميع المقالات</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><hr></div>
+
+    <section class="about has-text-centered" id="about">
+        <div class="container">
+            <h3 class="title has-text-primary">عن الموقع</h3>
+            <div class="article is-size-5">
+                <span class="has-text-info">قال الشيخ <a href="https://bit.ly/3Dr8yqU" class="is-underlined">عبدالعزيز بن باز</a> رحمه الله:</span>  
+                على جميع الأمة حكماء وعلماء وتجار وغيرهم، أن يبلغوا عن الله ورسوله ﷺ – هذا 
+                الدين وأن يشرحوه للناس بشتى اللغات الحية المستعملة بأساليب واضحة، وأن يشرحوا محاسن الإسلام، وحكمه وفوائده ،
+                وحقيقته حتى يعرفه أعداؤه، وحتى يعرفه الجاهلون، وحتى يعرفه الراغبون فيه. انتهى
+                <br>لأجل هذا كان هذا <a href="#" class="is-underlined has-text-success">الموقع</a> 
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container has-text-centered">
+            <div class="columns">
+                <div class="column">
+                    <p class="subtitle is-5">تابعنا على:</p>
+                    <div>
+                        <a href="https://bit.ly/youtube-Glorious-Religion"><i class='bx bxl-youtube has-text-danger'></i></a>
+                        <a href="https://bit.ly/Telegram-Glorious-Religion"><i class='bx bxl-telegram has-text-info'></i></a>
+                        <a href="https://www.patreon.com/GloriousReligion"><i class='bx bxl-patreon' style='color:#ff0000'></i></a>
+                    </div>
+                </div>
+                <div class="column">
+                    <p class="subtitle is-5">للتواصل:</p>
+                    <div>
+                        <a href="mailto:GloriousReligion@site.com">GloriousReligion@site.com</a>
+                    </div>
+                </div>
+                <div class="column">
+                    <p class="subtitle is-5">الترجمة الحرفية | literal translation</p>
+                    <div>
+                        <div id="google_translate_element" lang="en"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="licens is-success">
+        <div class="content has-text-centered has-text-white">
+            <p>لا تنسونا من صالح دعائكم</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src='Assets/javascript/mainJavaScript.js'></script>
+<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> 
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'ar'}, 'google_translate_element');
+    }
+</script> 

@@ -1,0 +1,140 @@
+.Article-box{
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+.article-content{
+    margin: 60px 0;
+}
+.article-content .main-title{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+.article-content .subTitle {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+.article-content .article {
+    font-size: 1.4rem;
+    padding: 15px 0;
+}
+.article-content .sub-article {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+.article-content .link{
+    text-decoration: underline;
+    color: #30a16e;
+    font-weight: 700;
+}
+.article-content .uls {
+    font-size: 1.4rem;
+}
+.article-content .lis {
+    padding: 3px 5px;
+    font-size: 1.19rem;
+    margin: 0 30px;
+}
+.article-content .lis.num {
+    list-style: arabic-indic;
+}
+.article-content .lis.dot {
+    list-style: disc;
+}
+.article-content img{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.article-content img.is-full{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+.article-content img.is-med{
+    width: 650px;
+    height: auto;
+    margin: 10px 0;
+}
+.article-content img.is-small{
+    width: 325px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.article-content .green{
+    color: #2dc07e;
+}
+.article-content .red{
+    color: #c02d45;
+}
+.article-content .blue{
+    color: #4f52e2;
+}
+
+.underlined{
+    text-decoration: underline;
+}
+
+
+
+.article-content img:hover {opacity: 0.7;}
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-content { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+#image-viewer .close {
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 100;
+}
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    .modal-content {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .Article-box{
+        padding: 80px 10px
+    }
+}
