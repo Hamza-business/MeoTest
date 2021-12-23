@@ -1,0 +1,27 @@
+{
+  "name": "glorious-religion-full",
+  "version": "1.0.0",
+  "description": "Glorious-Religion-full virsion with backend",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamzaElkotp/Glorious-Religion-full.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamzaElkotp/Glorious-Religion-full/issues"
+  },
+  "homepage": "https://github.com/HamzaElkotp/Glorious-Religion-full#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  },
+  "dependencies": {
+    "njk": "^4.0.2"
+  }
+}
