@@ -2,10 +2,6 @@ function navshow() {
     document.getElementById("nav").classList.toggle("show");
 }
 
-
-
-
-
 var zekr = [
 "{وَاذْكُرْ رَبَّكَ إِذَا نَسِيتَ}",
 "استغفرالله",
