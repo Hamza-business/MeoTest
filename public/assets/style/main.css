@@ -18,12 +18,10 @@ body{
     transition: 0.5s;
     font-family: 'Cairo', sans-serif;
     font-weight: 600;
+    direction: rtl;
 }
 a{
     text-decoration: none;
-}
-ul,li{
-    list-style: none;
 }
 i{
     padding-left: 6px;
@@ -47,10 +45,6 @@ i{
 .show{
     display: block !important;
 }
-view, langs{
-    display: block;
-}
-
 
 
 
@@ -181,7 +175,20 @@ view, langs{
     direction: ltr;
 }
 
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
 
+.button.is-primary.is-small.is-fullwidth {
+    font-size: 19px !important;
+    padding: 0px;
+    text-decoration: none;
+}
 
 
 .All-Articles{

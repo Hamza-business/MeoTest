@@ -1,7 +1,5 @@
 ---
     title: "موقع الدين المجيد | الرئيسية" 
-    langs: "ar" 
-    dire: "rtl"
     layout: "base.njk"
 ---
 
@@ -17,136 +15,21 @@
     <div class="container">
         <h3 class="title has-text-centered has-text-primary">مقالات مقترحه</h3>
         <div class="card-parent columns">
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
+            {%- for post in collections.مقترح -%}
+                {% include 'article-snippet.njk' %}
+            {%- endfor -%}
         </div>
         <br>
         <div class="content has-text-centered">
-            <a href="All-Articles/" class="button is-primary">عرض جميع المقالات</a>
+            <a href="/blog" class="button is-primary">عرض جميع المقالات</a>
         </div>
     </div>
 </section>
 
-<div class="container"><hr></div>
-
-<section class="carder">
-    <div class="container">
-        <h3 class="title has-text-centered has-text-primary">احدث المقالات</h3>
-        <div class="card-parent columns">
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
-            <div class="column is-4">
-                <div class="card-image">
-                    <img src="assets/images/background.jpg" alt="Placeholder image">
-                </div>
-                <div class="card-content">
-                    <div class="content">
-                        <a class="is-size-4" href="All-Articles/1/"> عنوان المقال</a>
-                        <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                        <time datetime="">تاريخ النشر: 2022/3/4</time>
-                        <view viewnumber="">عدد مرات القراءة: 70M</view>
-                        <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="content has-text-centered">
-            <a href="All-Articles/" class="button is-primary">عرض جميع المقالات</a>
-        </div>
-    </div>
-</section>
+<style>
+    .padded{
+        margin: 0px;
+        box-shadow: none;
+        margin-top: 0px;
+    }
+</style>

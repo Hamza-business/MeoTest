@@ -1,11 +1,7 @@
 ---
-    title: "موقع الدين المجيد | المقالات" 
-    langs: "ar" 
-    dire: "rtl"
-    layout: "base.njk"
+title: 'المقالات'
+layout: 'base.njk'
 ---
-
-
 <section class="All-Articles">
     <div class="container">
         <h3 class="title has-text-centered has-text-primary">المقالات | Articles</h3>
@@ -18,73 +14,9 @@
         </div>
         <br>
         <div class="columns is-multiline">
-            <div class="column is-4 target">
-                <div class="padded">
-                    <div class="card-image">
-                        <img src="../Assets/images/background.jpg" alt="Placeholder image">
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <a class="is-size-4" href="1/"> 1عنوان المقال</a>
-                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                            <time datetime="">تاريخ النشر: 2022/3/4</time>
-                            <view viewnumber="">عدد مرات القراءة: 70M</view>
-                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="column is-4 target">
-                <div class="padded">
-                    <div class="card-image">
-                        <img src="../Assets/images/background.jpg" alt="Placeholder image">
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <a class="is-size-4" href="1/"> 2عنوان المقال</a>
-                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                            <time datetime="">تاريخ النشر: 2022/3/4</time>
-                            <view viewnumber="">عدد مرات القراءة: 70M</view>
-                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="column is-4 target">
-                <div class="padded">
-                    <div class="card-image">
-                        <img src="../Assets/images/background.jpg" alt="Placeholder image">
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <a class="is-size-4" href="1/"> 3عنوان المقال</a>
-                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                            <time datetime="">تاريخ النشر: 2022/3/4</time>
-                            <view viewnumber="">عدد مرات القراءة: 70M</view>
-                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="column is-4 target">
-                <div class="padded">
-                    <div class="card-image">
-                        <img src="../Assets/images/background.jpg" alt="Placeholder image">
-                    </div>
-                    <div class="card-content">
-                        <div class="content">
-                            <a class="is-size-4" href="1/"> 4عنوان المقال</a>
-                            <p class="description">وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال وصف المقال</p>
-                            <time datetime="">تاريخ النشر: 2022/3/4</time>
-                            <view viewnumber="">عدد مرات القراءة: 70M</view>
-                            <langs langs="">اللغات: <span class="tag is-primary">عربي</span> <span class="tag is-primary">English</span></langs>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {%- for post in collections.post -%}
+                {% include 'article-snippet.njk' %}
+            {%- endfor -%}
         </div>
     </div>
 </section>
