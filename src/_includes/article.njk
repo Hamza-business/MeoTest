@@ -3,17 +3,22 @@ layout: base.njk
 ---
 <article class="main-article">
   <div class="container container--narrow flow">
-    <h1 class="article-title">{{ title }}</h1>
     <figure class="main-article__figure">
       <img src="{{ image }}" alt="{{ imageAlt }}">
-      <figcaption>
-        {{ imageAlt }}
-      </figcaption>
     </figure>
+    <h1 class="article-title title">{{ title }}</h1>
 
     {{ content | safe}}
 
   </div>
 </article>
+<style>
+  .main-article {
+  margin-top: 100px;
+}
 
+.container.container--narrow.flow p {
+  font-size: 18px !important;
+}
+</style>
 {# كده انت عملت تمبلت المقال #}
