@@ -143,7 +143,10 @@ i{
     margin-top: 10px;
 }
 
-
+#navigaton .navbar-item img {
+    max-height: 50px;
+    width: 100%;
+}
 
 .about{
     padding: var(--main-padding) 15px;
