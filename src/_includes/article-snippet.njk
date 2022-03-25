@@ -7,7 +7,7 @@
             <div class="content">
                 <h3 class="snippet__title"><a class="is-size-4" href="{{ post.url }}">{{ post.data.title }}</a></h3>
                 <div class="description">{{ post.data.description }}</div><br>
-                <time datetime="{{date}}">تاريخ النشر: {{post.data.date}}</time><br>
+                <time datetime="{{date}}">تاريخ النشر: {{{year}}-{{month}}-{{day}}}</time><br>
                 <p class="tager">العلامات: <span class="tag is-primary">{{ post.data.tags }}</span></p>
                 <a class="button is-primary is-small is-fullwidth" href="{{ post.url }}">اقرء المقال</a>
             </div>

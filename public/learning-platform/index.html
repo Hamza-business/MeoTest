@@ -5,13 +5,103 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>المنصة التعليمية | السيرة الذاتية</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'> -->
     <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma-rtl.min.css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> -->
+    <!-- <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> -->
+
+    <link href='https://unpkg.com/aos@next/dist/aos.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 </head>
 <body>
-    <div id="navigaton"></div>
+
+    <div class="counter-section">
+        <h1 class="header">منصة سلامة التعليمية</h1>
+         <div class="counter"  id="init_clock"></div>
+         <h2 class="article">المنصة تحت التطوير حاليا</h2>
+         <h2 class="article">شكرا على صبركم وتفهمكم</h2>
+         <a href="../" class="button is-dark">الرئيسية</a>
+     </div>
+
+     <style>
+         h1,h2,a{
+             font-weight: bold !important;
+            font-family: cairo !important;
+         }
+         .button.is-dark {
+  color: #00d1b2;
+  padding: 5px 20px;
+  border-radius: 7px;
+  border: 1px solid #00d1b2;
+  text-decoration: none;
+}
+         body, html {
+    text-align: center;
+}
+         .counter-section{
+    /* The image used */
+    background: linear-gradient( rgba(2, 2, 2, 0.6), rgba(2, 2, 2, 0.6) ),url("https://infinitylabs.bg/BMT/coming%20soon%20page%20with%20counter/img/bg.jpg");
+
+    /* Full height & width */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 120vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+
+.header{
+  font-size: 5rem;
+  font-family: 'Monoton', cursive;
+  font-weight: 200;
+  color: #00d1b2;
+  transform: scale(1);
+  margin-bottom: 10px;
+}
+
+.article{
+  font-size: 2.6rem;
+  font-family: 'Monoton', cursive;
+  font-weight: 200;
+  color: #00d1b2;
+  transform: scale(1);
+}
+
+/* Counter styles */
+
+.counter{
+    font-family: 'Monoton', cursive;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 3.7rem;
+    transform: scale(1);
+}
+
+.counter > div{
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.counter div > span{
+    padding: 15px;
+    border-radius: 25px;
+    display: inline-block;
+    box-shadow: 2px 0px 0 #00d1b2, 3px -4px 0 #00d1b2, 6px -4px 0 #00d1b2;
+    border: 2px solid #00d1b2;
+}
+     </style>
+
+
+    <!-- <div id="navigaton"></div>
 
     <section class="about has-text-centered" id="about">
         <div class="container">
@@ -23,10 +113,27 @@
         </div>
     </section>
 
-    <div id="footer"></div>
+    <div id="footer"></div> -->
 </body>
 </html>
-<script src='/assets/javascript/meo.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+$('#init_clock').countdown('2022/04/01', function(event) {
+        var $this = $(this).html(event.strftime(''
+            + '<div><span class="days">%D</span> </div> '
+            + '<div><span class="hours">%H</span> </div> '
+            + '<div><span class="minutes">%M</span> </div> '
+            + '<div><span class="seconds">%S</span></div> '));
+    });
+</script>
+
+
+
+<!-- <script src='/assets/javascript/meo.js'></script>
 <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -35,4 +142,8 @@
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({pageLanguage: 'ar'}, 'google_translate_element');
     }
-</script> 
+</script>  -->
+
+
+
+
