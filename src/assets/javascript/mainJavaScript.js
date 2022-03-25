@@ -1,4 +1,4 @@
-console.log("mmm");
+
 
 
 function navshow() {

@@ -1,3 +1,5 @@
+console.log("fffff");
+
 document.getElementById('navigaton').innerHTML = (`
 <nav class="navbar">
         <div class="navbar-brand">

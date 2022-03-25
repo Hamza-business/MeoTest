@@ -3,7 +3,7 @@
   <head>
       <meta charset='utf-8'>
       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-      <title>المقالات</title>
+      <title>6666</title>
       <meta name="description" content=" على جميع الأمة حكماء وعلماء وتجار وغيرهم، أن يبلغوا عن الله ورسوله ﷺ – هذا الدين وأن يشرحوه للناس بشتى اللغات الحية المستعملة بأساليب واضحة، وأن يشرحوا محاسن الإسلام، وحكمه وفوائده ، وحقيقته حتى يعرفه أعداؤه، وحتى يعرفه الجاهلون، وحتى يعرفه الراغبون فيه.">
       <link rel="shortcut icon" href="/assets/images/الدين-المجيد.jpg" type="image/x-icon">
       <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -65,59 +65,32 @@
 </div>
 
       <main>
-      <section class="All-Articles">
-    <div class="container">
-        <h3 class="title has-text-centered has-text-primary">المقالات | Articles</h3>
-        <br>
-        <div class="field">
-            <div class="control is-expanded has-icons-right">
-                <input class="input is-success" type="search" placeholder="بحث | Search" onkeyup="searcher()" id="Search"/>
-                <span class="icon is-small is-right"><i class='bx bx-search bx-tada'></i></span>
-            </div>
-        </div>
-        <br>
-        <div class="columns is-multiline"><div class="column is-4 target">
-    <div class="padded">
-        <div class="card-image">
-            <img class="snippet__image" src="/assets/images/2222222.png" alt="iiiiiii">
-        </div>
-        <div class="card-content">
-            <div class="content">
-                <h3 class="snippet__title"><a class="is-size-4" href="/blog/6666/">6666</a></h3>
-                <div class="description">ttt</div><br>
-                <time datetime="">تاريخ النشر: Sat Mar 26 2022 01:31:30 GMT+0300 (Arabian Standard Time)</time><br>
-                <p class="tager">العلامات: <span class="tag is-primary">مقال</span></p>
-                <a class="button is-primary is-small is-fullwidth" href="/blog/6666/">اقرء المقال</a>
-            </div>
-        </div>
-    </div>
-</div></div>
-    </div>
-</section>
+      <article class="main-article">
+  <div class="container container--narrow flow">
+    <figure class="main-article__figure">
+      <img src="/assets/images/2222222.png" alt="iiiiiii">
+    </figure>
+    <h1 class="article-title title">6666</h1>
 
-<ul id="pagin"></ul>
+    <p>بببب</p>
+<pre><code class="language-javascript">function jam(){
+  console.log(&quot;kkk&quot;)
+}
+</code></pre>
 
-<script type="text/javascript">
-    pageSize = 18;
-    var pageCount =  $(".column.is-4").length / pageSize;
-    for(i = 0 ; i<pageCount;i++){
-        $("#pagin").append('<li><a href="#">'+(i+1)+'</a></li>');
-    }
-    $("#pagin li").addClass("current")
-    showPage = function(page) {
-        $(".column.is-4").hide();
-        $(".column.is-4").each(function(n) {
-        if (n >= pageSize * (page - 1) && n < pageSize * page)
-            $(this).show();
-        });        
-    }
-    showPage(1);
-    $("#pagin li").click(function() {
-        $("#pagin li").removeClass("current");
-        $(this).addClass("current");
-        showPage(parseInt($(this).text())) 
-    });
-</script> 
+
+  </div>
+</article>
+<style>
+  .main-article {
+  margin-top: 100px;
+}
+
+.container.container--narrow.flow p {
+  font-size: 18px !important;
+}
+</style>
+
       </main>
 
       <div class="container"><hr></div>
