@@ -1,3 +1,6 @@
+console.log("mmm");
+
+
 function navshow() {
     document.getElementById("nav").classList.toggle("show");
 }
